@@ -52,7 +52,7 @@ fn main() -> Result<(), ExitFailure> {
         .with_context(|_| format!("could not read file `{}`", args.path.display()))?;
     println!("File content: {}", content);
 
-    grrs::find_matches(&content, &args.pattern, &mut std::io::stdout());
+    tacoda_grrs::find_matches(&content, &args.pattern, &mut std::io::stdout());
 
     Ok(())
 }
@@ -104,6 +104,6 @@ fn check_answer_validity() {
 #[test]
 fn find_a_match() {
     let mut result = Vec::new();
-    grrs::find_matches("lorem ipsum\ndolor sit amet", "lorem", &mut result);
+    tacoda_grrs::find_matches("lorem ipsum\ndolor sit amet", "lorem", &mut result);
     assert_eq!(result, b"lorem ipsum\n");
 }
