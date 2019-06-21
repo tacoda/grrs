@@ -1,8 +1,15 @@
 [package]
 name = "grrs"
 version = "0.1.0"
-authors = ["Ian Johnson <ijohnson@covermymeds.com>"]
+authors = ["Ian Johnson <tacoda@pm.me>"]
 edition = "2018"
+license = "MIT"
+description = "Ad tool to search files"
+readme = "README.md"
+homepage = "https://github.com/tacoda/grrs"
+repository = "https://github.com/tacoda/grrs"
+keywords = ["cli", "search", "demo"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 structopt = "0.2.16"
