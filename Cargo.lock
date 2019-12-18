@@ -427,7 +427,7 @@ dependencies = [
 
 [[package]]
 name = "tacoda_grrs"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "assert_cmd 0.11.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "exitfailure 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
