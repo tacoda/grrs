@@ -17,7 +17,6 @@ fn main() -> Result<(), ExitFailure> {
 
     let content = std::fs::read_to_string(&args.path)
         .with_context(|_| format!("could not read file `{}`", args.path.display()))?;
-    println!("File content: {}", content);
 
     tacoda_grrs::find_matches(&content, &args.pattern, &mut std::io::stdout());
 
@@ -25,11 +24,10 @@ fn main() -> Result<(), ExitFailure> {
 }
 
 
-#[test]
-fn check_answer_validity() {
-    let answer = 42;
-    assert_eq!(answer, 42);
-}
+// We’ve just seen how to make this piece of code easily testable. We have
+// 1. identified one of the core pieces of our application,
+// 2. put it into its own function,
+// 3. and made it more flexible.
 
 #[test]
 fn find_a_match() {
