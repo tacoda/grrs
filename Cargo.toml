@@ -1,10 +1,11 @@
 [package]
 name = "tacoda_grrs"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["Ian Johnson <tacoda@pm.me>"]
 edition = "2018"
 license = "MIT"
 description = "A tool to search files"
+readme = "README.md"
 homepage = "https://github.com/tacoda/grrs"
 repository = "https://github.com/tacoda/grrs"
 keywords = ["cli", "search", "demo"]
