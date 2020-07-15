@@ -23,7 +23,6 @@ fn main() -> Result<(), ExitFailure> {
     Ok(())
 }
 
-
 // We’ve just seen how to make this piece of code easily testable. We have
 // 1. identified one of the core pieces of our application,
 // 2. put it into its own function,
